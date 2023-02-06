@@ -17,16 +17,25 @@ function handleLogout() {
 }
 
   return (
+    <>
     <nav className="navbar navbar-light bg-black mb-3">
       <Link to="/">
+      {/* <div> */}
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReVTTo9JHVC4UBRz51V2RotMqaQNEl4eS-4A&usqp=CAU"
           alt=""
           className="m-4"
         />
+      {/* </div> */}
       </Link>
 
       <div className="row-col-2 d-grid gap-2 d-md-flex right-content-md-end">
+
+          {/* <Link to= "/card"><h4>Characters</h4></Link> */}
+          {/* <Link to= "/cardplanet"><h3>Vehicles</h3></Link> */}
+          {/* <Link to= "/cardvehicle"><h4>Vehicles</h4></Link> */}
+
+          
         
           <Link to= "/login"><button className={"btn btn-info "+ store.view}><b>Login</b></button></Link>
 
@@ -53,5 +62,7 @@ function handleLogout() {
           </ul>
         </div>
     </nav>
+    <div className="local-nav-bar- display-burguer secondary-nav"><button>Navigation</button><ul className="local-nav-items" role="menubar"><li className="local-nav-items" role="none"><a href="" data-title="Characters"></a></li></ul></div>
+    </>
   );
 };
